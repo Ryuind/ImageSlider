@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div data-slideshow-container class='slideshowContainer'>
+      <div class="pictureInputForm">
+        <label>Use the button below to add files.</label>
+        <br>
+        <label for="fileUpload" class="customFileUpload">
+          <i class="itUploads"></i> Picture Uploader
+        </label>
+        <input type="file" data-user-input class="userInput" id="fileUpload" />
+        <br>
+        <button data-submit-button class="submitButton">Submit</button>
+        <p data-submit-text class="dataSubmitText"></p>
+      </div>
+      <div data-picture-container class='pictureContainer'>
+        <button data-previous-button class='previousButton'>s</button>
+        <button data-forward-button class='forwardButton'>></button>
+        <img id="myImg" src="#" alt="Upload your pictures to begin" height=350 width=100%>
+      
+      </div>
+      <div data-navigation-container class='navigationContainer'>
+        <div data-dot-container class="dotContainer"></div>
+      </div>
+        <button data-delete-button class="deleteButton">Delete this picture</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+body{
+    background-color: rgb(201, 211, 113);
+  }
+  .slideshowContainer{
+    position: relative;
+    border: none;
+    height: 500px;
+    width: 100%;
+    min-width: 250px;
+    text-align: center;
+  }
+  
+  
+  .pictureInputForm {
+    position: relative;
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    margin: 20px;
+    background-color: beige;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: left;
+  }
+  .userInput {
+   display: none;
+  }
+  .customFileUpload {
+      position: absolute;
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 6px 12px;
+      cursor: pointer;
+      margin: 10px 0px 0px 0px;
+      border-radius: 4px;
+  }
+  
+  .submitButton {
+    position: absolute;
+    height: 35px;
+    width: 100px;
+    margin: -10px 0px 0px 180px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+  }
+  
+  .dataSubmitText {
+    font-size: 20px;
+    margin: 25px 0px 0px 70px;
+    padding: 4px;
+  }
+  
+  .pictureContainer{
+    position: relative;
+    border: none;
+    height: 275px;
+    width: 100%;
+    min-width: 250px;
+    
+   
+  }
+  
+  .pictureContainer:hover .forwardButton{
+    visibility: visible;
+  }
+  
+  .forwardButton{
+    visibility: hidden;
+    position: absolute;
+    display:block;
+    right: 0;
+    margin: 150px 0px 0px 0px;
+    height: 50px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(221,221,221, 0.5);
+    transition: 0.2s;
+  }
+  .pictureContainer:hover .previousButton{
+    visibility: visible;
+  }
+  .previousButton{
+    visibility: hidden;
+    position: absolute;
+    display:block;
+    left: 0;
+    margin: 150px 0px 0px 0px;
+    height: 50px;
+    width: 60px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(221,221,221, 0.5);
+    transition: 0.2s;
+  }
+  
+  
+  .navigationContainer {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    border: none;
+    width: 100%;
+    min-width: 250px;
+    margin: 0px 0px 0px 0px;
+  }
+  
+  .dotContainer {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 100%;
+    min-width: 200px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  
+  .dot {
+    visibility: hidden;
+    display: inline-block;
+    border: 2px solid rgba(221,221,221, 0.8);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin: 0px 0px 0px 2px;
+    transition: 0.2s;
+  }
+  
+  .pictureContainer:hover + .navigationContainer .dotContainer .dot {
+    visibility: visible;
+  }
+  .navigationContainer:hover .dotContainer .dot {
+    visibility: visible;
+  }
+  
+  .deleteButton {
+    margin: 100px 0px 0px 0px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+  }
